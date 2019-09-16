@@ -1,0 +1,90 @@
+{
+    "use_default_dir": true,
+    "work_dir": "",
+    "frequency": 1,
+    "file_notifier": [
+        {
+            "file_name": "errors.txt",
+            "status_to_check": "edited",
+            "need_file_properties": false,
+            "args": {
+                "header": "Attention!",
+                "content": "File errors.txt was changed"
+            }
+        },
+        {
+            "file_name": "*.pdf",
+            "status_to_check": "new",
+            "need_file_properties": false,
+            "args": {
+                "header": "Success!",
+                "content": "New pdf file was created"
+            }
+        },
+        {
+            "file_name": "*.pdf",
+            "status_to_check": "edited",
+            "need_file_properties": false,
+            "args": {
+                "header": "Big news!",
+                "content": "Some pdf file was changed"
+            }
+        }
+    ],
+    "create_new_folder": [
+        {
+            "file_name": "errors",
+            "status_to_check": "moved",
+            "need_file_properties": true,
+            "args": {
+                "path_to_folder": "C:/py/mfse/src/folder_example/errors/"
+            }
+        },
+        {
+            "file_name": "errors",
+            "status_to_check": "renamed",
+            "need_file_properties": true,
+            "args": {
+                "path_to_folder": "C:/py/mfse/src/folder_example/errors/"
+            }
+        },
+        {
+            "file_name": "errors",
+            "status_to_check": "moved_and_renamed",
+            "need_file_properties": true,
+            "args": {
+                "path_to_folder": "C:/py/mfse/src/folder_example/errors/"
+            }
+        },
+        {
+            "file_name": "errors",
+            "status_to_check": "deleted",
+            "need_file_properties": true,
+            "args": {
+                "path_to_folder": "C:/py/mfse/src/folder_example/errors/"
+            }
+        }
+    ],
+    "convert_docx_to_pdf": [
+        {
+            "file_name": "*.docx",
+            "status_to_check": "edited",
+            "need_file_properties": true,
+            "args": {
+                "convert_api_secret": "H7ZPx2T0NTTwR0RK",
+                "use_default_new_pdf_path": true,
+                "new_pdf_path": ""
+            }
+        },
+        {
+            "file_name": "*.docx",
+            "status_to_check": "new",
+            "need_file_properties": true,
+            "args": {
+                "convert_api_secret": "H7ZPx2T0NTTwR0RK",
+                "use_default_new_pdf_path": true,
+                "new_pdf_path": ""
+            }
+        }
+    ]
+}

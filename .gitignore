@@ -1,0 +1,12 @@
+# editors
+.vscode/
+.idea/
+
+# Byte-compiled / optimized / DLL files
+__pycache__/
+
+# log file
+logs.txt
+
+# virtual env files
+.env/
