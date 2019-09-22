@@ -1,10 +1,5 @@
 # Application for monitoring file system events
 
-## Introduction
-At this moment application work only on Windows 10.
-I have tried to import into Linux system, but in Linux file.stat().st_ctime (create time) changed when i change file, but in Windows 10 it isn't. I have no time to reworks everything.
-
-
 ## Requirements
 You need to install convertapi
 ```
