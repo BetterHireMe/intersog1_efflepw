@@ -4,30 +4,12 @@
     "frequency": 1,
     "file_notifier": [
         {
-            "file_name": "errors.txt",
-            "status_to_check": "edited",
-            "need_file_properties": false,
+            "file_name": "*.*",
+            "status_to_check": "*",
+            "need_file_properties": true,
             "args": {
-                "header": "Attention!",
-                "content": "File errors.txt was changed"
-            }
-        },
-        {
-            "file_name": "*.pdf",
-            "status_to_check": "new",
-            "need_file_properties": false,
-            "args": {
-                "header": "Success!",
-                "content": "New pdf file was created"
-            }
-        },
-        {
-            "file_name": "*.pdf",
-            "status_to_check": "edited",
-            "need_file_properties": false,
-            "args": {
-                "header": "Big news!",
-                "content": "Some pdf file was changed"
+                "header": "New notification!",
+                "content": "File {0} was {1}"
             }
         }
     ],
@@ -78,7 +60,7 @@
         },
         {
             "file_name": "*.docx",
-            "status_to_check": "new",
+            "status_to_check": "created",
             "need_file_properties": true,
             "args": {
                 "convert_api_secret": "H7ZPx2T0NTTwR0RK",
